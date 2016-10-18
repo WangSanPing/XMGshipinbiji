@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>UIView | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./zong_he_shi_yong.html" />
+    
+    
+    <link rel="prev" href="./di_yi_tian.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="0.2"
+        data-chapter-title="UIView"
+        data-filepath="uiview.md"
+        data-basepath="."
+        data-revision="Thu Mar 10 2016 10:02:13 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        UI
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="di_yi_tian.html">
+            
+                
+                    <a href="./di_yi_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        第一个iOS程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.2" data-path="uiview.html">
+            
+                
+                    <a href="./uiview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        UIView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="zong_he_shi_yong.html">
+            
+                
+                    <a href="./zong_he_shi_yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        综合使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="jiu_gong_ge_ji_suan.html">
+            
+                
+                    <a href="./jiu_gong_ge_ji_suan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        九宫格计算
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="an_niu_kong_zhi_ji_shu_ju_cun_qu.html">
+            
+                
+                    <a href="./an_niu_kong_zhi_ji_shu_ju_cun_qu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        按钮控制及数据存取
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="uiview">UIView</h1>
+<h2 id="uiview&#x7684;&#x5E38;&#x89C1;&#x5C5E;&#x6027;">UIView&#x7684;&#x5E38;&#x89C1;&#x5C5E;&#x6027;</h2>
+<ul>
+<li>NSArray *subviews<ul>
+<li>&#x6240;&#x6709;&#x7684;&#x5B50;&#x63A7;&#x4EF6;</li>
+<li>&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;&#x51B3;&#x5B9A;&#x7740;&#x5B50;&#x63A7;&#x4EF6;&#x7684;&#x663E;&#x793A;&#x5C42;&#x7EA7;&#x987A;&#x5E8F;(&#x4E0B;&#x6807;&#x8D8A;&#x5927;&#xFF0C;&#x8D8A;&#x663E;&#x793A;&#x5728;&#x4E0A;&#x9762;)</li>
+</ul>
+</li>
+</ul>
+<h2 id="uiview&#x7684;&#x5E38;&#x89C1;&#x65B9;&#x6CD5;">UIView&#x7684;&#x5E38;&#x89C1;&#x65B9;&#x6CD5;</h2>
+<ul>
+<li><p>addSubview</p>
+<ul>
+<li>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B50;&#x63A7;&#x4EF6;</li>
+<li>&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x7684;&#x5B50;&#x63A7;&#x4EF6;&#x4F1A;&#x88AB;&#x585E;&#x5230;subviews&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x9762;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x8C03;&#x6574;&#x5B50;&#x63A7;&#x4EF6;&#x5728;subview&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x987A;&#x5E8F;</p>
+</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x5C06;&#x5B50;&#x63A7;&#x4EF6;view&#x63D2;&#x5165;&#x5230;subviews&#x6570;&#x7EC4;&#x7684;index&#x4F4D;&#x7F6E;</span>
+- (<span class="hljs-keyword">void</span>)insertSubview:(<span class="hljs-built_in">UIView</span> *)view atIndex:(<span class="hljs-built_in">NSInteger</span>)index;
+
+<span class="hljs-comment">// &#x5C06;&#x5B50;&#x63A7;&#x4EF6;view&#x663E;&#x793A;&#x5230;&#x5B50;&#x63A7;&#x4EF6;siblingSubview&#x7684;&#x4E0B;&#x9762;</span>
+- (<span class="hljs-keyword">void</span>)insertSubview:(<span class="hljs-built_in">UIView</span> *)view belowSubview:(<span class="hljs-built_in">UIView</span> *)siblingSubview;
+<span class="hljs-comment">// &#x5C06;&#x5B50;&#x63A7;&#x4EF6;view&#x663E;&#x793A;&#x5230;&#x5B50;&#x63A7;&#x4EF6;siblingSubview&#x7684;&#x4E0A;&#x9762;</span>
+- (<span class="hljs-keyword">void</span>)insertSubview:(<span class="hljs-built_in">UIView</span> *)view aboveSubview:(<span class="hljs-built_in">UIView</span> *)siblingSubview;
+
+<span class="hljs-comment">// &#x5C06;&#x5B50;&#x63A7;&#x4EF6;view&#x653E;&#x5230;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x9762;&#xFF0C;&#x663E;&#x793A;&#x5728;&#x6700;&#x4E0A;&#x9762;</span>
+- (<span class="hljs-keyword">void</span>)bringSubviewToFront:(<span class="hljs-built_in">UIView</span> *)view;
+<span class="hljs-comment">// &#x5C06;&#x5B50;&#x63A7;&#x4EF6;view&#x653E;&#x5230;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x663E;&#x793A;&#x5728;&#x6700;&#x4E0B;&#x9762;</span>
+- (<span class="hljs-keyword">void</span>)sendSubviewToBack:(<span class="hljs-built_in">UIView</span> *)view;
+</code></pre>
+<h2 id="uiview&#x7684;&#x4F4D;&#x7F6E;&#x53CA;&#x5927;&#x5C0F;&#x63A7;&#x5236;">UIView&#x7684;&#x4F4D;&#x7F6E;&#x53CA;&#x5927;&#x5C0F;&#x63A7;&#x5236;</h2>
+<ul>
+<li>&#x63A7;&#x5236;&#x63A7;&#x4EF6;&#x4F4D;&#x7F6E;&#x53CA;&#x5927;&#x5C0F;&#x7684;&#x5C5E;&#x6027;&#x662F;<strong>frame</strong>&#xFF0C;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x4E3A;<strong>CGRect</strong>&#x7C7B;&#x578B;&#x7684;&#x7ED3;&#x6784;&#x4F53;<pre><code class="lang-objc">  <span class="hljs-comment">/**
+   *  &#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x7684;&#x529F;&#x80FD;&#x4E3A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E3A;100&#xFF0C;100&#x5BBD;&#x5EA6;200&#x9AD8;&#x5EA6;300&#x7684;label
+   */</span>
+  <span class="hljs-built_in">UILabel</span> *label = [[<span class="hljs-built_in">UILabel</span> alloc]init];
+  label<span class="hljs-variable">.text</span> = <span class="hljs-string">@&quot;&#x6211;&#x662F;lable&quot;</span>;
+  label<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> whiteColor];
+  label<span class="hljs-variable">.frame</span> = <span class="hljs-built_in">CGRectMake</span>(<span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+  label<span class="hljs-variable">.textColor</span> = [<span class="hljs-built_in">UIColor</span> blackColor];
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:label];
+</code></pre>
+</li>
+</ul>
+<h2 id="uiview&#x7684;&#x4F4D;&#x7F6E;&#x5C5E;&#x6027;">UIView&#x7684;&#x4F4D;&#x7F6E;&#x5C5E;&#x6027;</h2>
+<pre><code class="lang-objc"><span class="hljs-comment">//&#x63A7;&#x4EF6;&#x77E9;&#x5F62;&#x6846;&#x5728;&#x7236;&#x63A7;&#x4EF6;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5C3A;&#x5BF8;(&#x4EE5;&#x7236;&#x63A7;&#x4EF6;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#x4E3A;&#x5750;&#x6807;&#x539F;&#x70B9;)</span>
+<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>) <span class="hljs-built_in">CGRect</span> frame;
+
+<span class="hljs-comment">//&#x63A7;&#x4EF6;&#x77E9;&#x5F62;&#x6846;&#x5728;&#x7236;&#x63A7;&#x4EF6;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5C3A;&#x5BF8;(&#x4EE5;&#x81EA;&#x5DF1;&#x5DE6;&#x4E0A;&#x89D2;&#x4E3A;&#x5750;&#x6807;&#x539F;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;bounds&#x7684;x,y&#x4E00;&#x822C;&#x4E3A;0)</span>
+<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>) <span class="hljs-built_in">CGRect</span> bounds;
+
+<span class="hljs-comment">//&#x63A7;&#x4EF6;&#x4E2D;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;(&#x4EE5;&#x7236;&#x63A7;&#x4EF6;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#x4E3A;&#x5750;&#x6807;&#x539F;&#x70B9;)</span>
+<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>) <span class="hljs-built_in">CGPoint</span> center;
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./di_yi_tian.html" class="navigation navigation-prev " aria-label="Previous page: 第一个iOS程序"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./zong_he_shi_yong.html" class="navigation navigation-next " aria-label="Next page: 综合使用"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
