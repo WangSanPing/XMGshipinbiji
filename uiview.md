@@ -21,7 +21,7 @@
 // 将子控件view显示到子控件siblingSubview的下面
 - (void)insertSubview:(UIView *)view belowSubview:(UIView *)siblingSubview;
 // 将子控件view显示到子控件siblingSubview的上面
-- (void)insertSubview:(UIView *)view aboveSubview:(UIView *)siblingSubview;
+- (void)insertSubview:(UIView *)view aboveSubview:(UI---View *)siblingSubview;
 
 // 将子控件view放到数组的最后面，显示在最上面
 - (void)bringSubviewToFront:(UIView *)view;
@@ -58,3 +58,6 @@
 @property(nonatomic) CGPoint center;
 
 ```
+
+
+## 关于添加了一个view之后却不显示的一种可能性

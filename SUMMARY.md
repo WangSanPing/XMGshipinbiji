@@ -34,5 +34,4 @@
     * [iOS几种常用的存储方法](iosji_zhong_chang_yong_de_cun_chu_fang_fa.md)
     * [手势操作](shou_shi_cao_zuo.md)
     * [父子控制器](父子控制器.md)
-    * test
 
