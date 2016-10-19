@@ -24,20 +24,12 @@
 19. ####UITableView(三)简单性能优化
 20. ####UITableView(四)几种常用设置
 21. ####UITableView(五)自定义cell
-
 22. ####UITableView(六)数据的增删改
-
 23. ####UIAlertController
-
 24. ####UITableView(七)数据的批量删除
-
 25. ####使用tableHeaderView和tableFooterView实现头广告轮播及尾部加载更多数据
-
 26. ####代理设计模式
-
 27. ####KVC/KVO
-
 28. ####UIApplication
-
 29. ####app的启动过程
 30. ####iOS几种常用的存储方法
