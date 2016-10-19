@@ -60,4 +60,9 @@
 ```
 
 
-## 关于添加了一个view之后却不显示的一种可能性
+## 关于添加了一个view之后却不显示的一种可能性(2016-10-19)
+-  在通过xib加载一个view时，通常是会先根据xib的尺寸加载到屏幕上，此时在这个控制器上再加载一个其他控制器的view时，view默认情况下的『autoresizingMask』属性都包含了『UIViewAutoresizingFlexibleWidth』(根据view的伸缩而伸缩宽)和『UIViewAutoresizingFlexibleHeight』(根据view的伸缩而伸缩高)这两个值，所以在初次加载xib的view时，假设尺寸为600X600，需要添加的viewB尺寸为100X100，这时已经添加上去了，但是当xib的view加载完成后需要根据屏幕大小的尺寸做调整，变成了375x667,之后添加的viewB也根据控制器的view做了伸缩，此时viewB在伸缩完成之后就会变得不可见了 
+
+
+
+ - 解决办法是把view的『autoresizingMask』属性设为UIViewAutoresizingNone
