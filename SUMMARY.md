@@ -35,6 +35,7 @@
     * [手势操作](shou_shi_cao_zuo.md)
     * [父子控制器](父子控制器.md)
     * [关于添加了一个view之后却不显示的一种可能性](关于添加了一个view之后却不显示的一种可能性.md)
+    * [在scrollview中子控件布局的注意点](在scrollview中子控件布局的注意点.md)
 * [语法](README.md)
- * [static的作用](static的作用.md)
+    * [static的作用](static的作用.md)
 
