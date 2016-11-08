@@ -38,4 +38,5 @@
     * [在scrollview中子控件布局的注意点](在scrollview中子控件布局的注意点.md)
 * [语法](README.md)
     * [static的作用](static的作用.md)
+    * [array and pointer](array-and-pointer.md)
 
