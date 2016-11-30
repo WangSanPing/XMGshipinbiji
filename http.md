@@ -14,8 +14,28 @@
 
 - Get
 
-
 ```objc
 
+NSString *urlString = @"http://520it.com?name=张三&pwd=123";urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
+// 创建URLNSURL *url = [NSURL URLWithString:urlString];
+
+// 创建请求NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+
+// 设置请求方法（默认就是GET请求）request.HTTPMethod = @"GET";
+
+```
+
+- POST
+
+```objc
+// 请求路径NSString *urlString = @"http://520it.com/图片";urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+// 创建URLNSURL *url = [NSURL URLWithString:urlString];
+
+// 创建请求NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+
+// 设置请求方法request.HTTPMethod = @"POST";
+
+// 设置请求体request.HTTPBody = [@"name=张三&pwd=123" dataUsingEncoding:NSUTF8StringEncoding];
 ```
