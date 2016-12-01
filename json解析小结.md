@@ -13,9 +13,29 @@
 
 #### JSON数据(NSData)  -> OC对象(Foundation Object)
 
+
+- 利用NSJSONSerialization类
+
 ```objc
 
-// 利用NSJSONSerialization类
-+ (id)JSONObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt error:(NSError **)error;
+ /**
+
+ NSJSONReadingOptions 说明
+
+
+ NSJSONReadingMutableContainers = (1UL << 0) 创建出来的数据和字典是可变的
+
+ NSJSONReadingMutableLeaves = (1UL << 1) 数组或者字典里面的字符串是可变的
+
+ NSJSONReadingAllowFragments 允许解析出来的对象不是字典或者数组，比如直接是字符串或者NSNumber
+
+ */
+
+ + (id)JSONObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt error:(NSError **)error;
+
 
 ```
+- 
+
+    
+    
