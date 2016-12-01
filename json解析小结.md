@@ -54,7 +54,7 @@
 
  // 把字典数据转成plist文件
 
-  [dict writeToFile:@"/Users/oukyoku/Desktop/WorkSpace/cacheJSON/video.plist" atomically:YES];
+ [dict writeToFile:@"/Users/oukyoku/Desktop/WorkSpace/cacheJSON/video.plist" atomically:YES];
 
 ```
 
