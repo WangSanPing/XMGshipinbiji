@@ -10,3 +10,12 @@
 - true -> NSNumber @1
 - false -> NSNumber @0
 - null -> NSNull
+
+#### JSON数据(NSData)  -> OC对象(Foundation Object)
+
+```objc
+
+// 利用NSJSONSerialization类
++ (id)JSONObjectWithData:(NSData *)data options:(NSJSONReadingOptions)opt error:(NSError **)error;
+
+```
