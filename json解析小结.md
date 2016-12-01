@@ -48,8 +48,6 @@
 
 ```objc
 
- // 利用NSJSONSerialization类
-
  // 序列化
 
  NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
