@@ -35,7 +35,31 @@
 
 
 ```
-- 
+
+#### OC对象（Foundation Object）-> JSON数据（NSData）
+```objc
+// 利用NSJSONSerialization类
++ (NSData *)dataWithJSONObject:(id)obj options:(NSJSONWritingOptions)opt error:(NSError **)error;
+```
+
+#### 格式化服务器返回的JSON数据
+- 在线格式化：http://tool.oschina.net/codeformat/json
+- 将服务器返回的字典或者数组写成plist文件
+
+```objc
+
+ // 利用NSJSONSerialization类
+
+ // 序列化
+
+ NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+
+ // 把字典数据转成plist文件
+
+  [dict writeToFile:@"/Users/oukyoku/Desktop/WorkSpace/cacheJSON/video.plist" atomically:YES];
+
+```
+
 
     
     
