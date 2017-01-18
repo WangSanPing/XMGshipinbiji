@@ -1,0 +1,801 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>父子控制器 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./关于添加了一个view之后却不显示的一种可能性.html" />
+    
+    
+    <link rel="prev" href="./shou_shi_cao_zuo.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="0.33"
+        data-chapter-title="父子控制器"
+        data-filepath="父子控制器.md"
+        data-basepath="."
+        data-revision="Thu Dec 01 2016 15:19:47 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        UI
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="di_yi_tian.html">
+            
+                
+                    <a href="./di_yi_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        第一个iOS程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="uiview.html">
+            
+                
+                    <a href="./uiview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        UIView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.3" data-path="zong_he_shi_yong.html">
+            
+                
+                    <a href="./zong_he_shi_yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.3.</b>
+                        
+                        综合使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.4" data-path="jiu_gong_ge_ji_suan.html">
+            
+                
+                    <a href="./jiu_gong_ge_ji_suan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.4.</b>
+                        
+                        九宫格计算
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.5" data-path="an_niu_kong_zhi_ji_shu_ju_cun_qu.html">
+            
+                
+                    <a href="./an_niu_kong_zhi_ji_shu_ju_cun_qu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.5.</b>
+                        
+                        按钮控制及数据存取
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.6" data-path="zhi_shi_qi.html">
+            
+                
+                    <a href="./zhi_shi_qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.6.</b>
+                        
+                        指示器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.7" data-path="plistde_shi_yong.html">
+            
+                
+                    <a href="./plistde_shi_yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.7.</b>
+                        
+                        plist的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.8" data-path="mo_xing.html">
+            
+                
+                    <a href="./mo_xing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.8.</b>
+                        
+                        模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.9" data-path="view_zi_ding_yi_kong_jian_de_feng_zhuang.html">
+            
+                
+                    <a href="./view_zi_ding_yi_kong_jian_de_feng_zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.9.</b>
+                        
+                        View自定义控件的封装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.10" data-path="xib_wen_jian_de_shi_yong.html">
+            
+                
+                    <a href="./xib_wen_jian_de_shi_yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.10.</b>
+                        
+                        Xib文件的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.11" data-path="scroolviewde_shi_yong.html">
+            
+                
+                    <a href="./scroolviewde_shi_yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.11.</b>
+                        
+                        ScroolView的使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.12" data-path="jian_dan_dong_hua_jie_shao.html">
+            
+                
+                    <a href="./jian_dan_dong_hua_jie_shao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.12.</b>
+                        
+                        简单动画介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.13" data-path="tong_guo_scrollview_shi_xian_tu_pian_suo_fang.html">
+            
+                
+                    <a href="./tong_guo_scrollview_shi_xian_tu_pian_suo_fang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.13.</b>
+                        
+                        通过ScrollView实现图片缩放
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.14" data-path="scrollviewshi_xian_tu_pian_lun_bo_ji_feng_zhuang_z.html">
+            
+                
+                    <a href="./scrollviewshi_xian_tu_pian_lun_bo_ji_feng_zhuang_z.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.14.</b>
+                        
+                        ScrollView实现图片轮播及封装自定义控件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.15" data-path="zi_ding_yi_kong_jian_de_feng_zhuang_xi_jie.html">
+            
+                
+                    <a href="./zi_ding_yi_kong_jian_de_feng_zhuang_xi_jie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.15.</b>
+                        
+                        自定义控件的封装细节
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.16" data-path="ding_shi_qi.html">
+            
+                
+                    <a href="./ding_shi_qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.16.</b>
+                        
+                        定时器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.17" data-path="san_zhong_yong_dai_ma_shi_xian_autolayout_de_fang_.html">
+            
+                
+                    <a href="./san_zhong_yong_dai_ma_shi_xian_autolayout_de_fang_.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.17.</b>
+                        
+                        三种用代码实现Autolayout的方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.18" data-path="uitableview4e0029.html">
+            
+                
+                    <a href="./uitableview4e0029.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.18.</b>
+                        
+                        UITableView\(一\)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.19" data-path="uitableview4e8c29.html">
+            
+                
+                    <a href="./uitableview4e8c29.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.19.</b>
+                        
+                        UITableView\(二\)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.20" data-path="uitableview4e0929_jian_dan_xing_neng_you_hua.html">
+            
+                
+                    <a href="./uitableview4e0929_jian_dan_xing_neng_you_hua.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.20.</b>
+                        
+                        UITableView\(三\)简单性能优化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.21" data-path="uitableview56db29_ji_zhong_chang_yong_she_zhi.html">
+            
+                
+                    <a href="./uitableview56db29_ji_zhong_chang_yong_she_zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.21.</b>
+                        
+                        UITableView\(四\)几种常用设置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.22" data-path="uitableview4e9429-_zi_ding_yi_cell.html">
+            
+                
+                    <a href="./uitableview4e9429-_zi_ding_yi_cell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.22.</b>
+                        
+                        UITableView\(五\)-自定义Cell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.23" data-path="uitableview516d29_shu_ju_de_zeng_shan_gai.html">
+            
+                
+                    <a href="./uitableview516d29_shu_ju_de_zeng_shan_gai.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.23.</b>
+                        
+                        UITableView\(六\)数据的增删改
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.24" data-path="uialertcontroller.html">
+            
+                
+                    <a href="./uialertcontroller.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.24.</b>
+                        
+                        UIAlertController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.25" data-path="uitableview4e0329_shu_ju_de_pi_liang_shan_chu.html">
+            
+                
+                    <a href="./uitableview4e0329_shu_ju_de_pi_liang_shan_chu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.25.</b>
+                        
+                        UITableView\(七\)数据的批量删除
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.26" data-path="shi_yong_tableheaderview_he_tablefooterview_shi_xi.html">
+            
+                
+                    <a href="./shi_yong_tableheaderview_he_tablefooterview_shi_xi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.26.</b>
+                        
+                        使用tableHeaderView和tableFooterView实现头广告轮播及尾部加载更多数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.27" data-path="dai_li_she_ji_mo_shi.html">
+            
+                
+                    <a href="./dai_li_she_ji_mo_shi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.27.</b>
+                        
+                        代理设计模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.28" data-path="kvckvo.html">
+            
+                
+                    <a href="./kvckvo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.28.</b>
+                        
+                        KVC\/KVO
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.29" data-path="uiapplication.html">
+            
+                
+                    <a href="./uiapplication.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.29.</b>
+                        
+                        UIApplication
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.30" data-path="appde_qi_dong_guo_cheng.html">
+            
+                
+                    <a href="./appde_qi_dong_guo_cheng.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.30.</b>
+                        
+                        app的启动过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.31" data-path="iosji_zhong_chang_yong_de_cun_chu_fang_fa.html">
+            
+                
+                    <a href="./iosji_zhong_chang_yong_de_cun_chu_fang_fa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.31.</b>
+                        
+                        iOS几种常用的存储方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.32" data-path="shou_shi_cao_zuo.html">
+            
+                
+                    <a href="./shou_shi_cao_zuo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.32.</b>
+                        
+                        手势操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="0.33" data-path="父子控制器.html">
+            
+                
+                    <a href="./父子控制器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.33.</b>
+                        
+                        父子控制器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.34" data-path="关于添加了一个view之后却不显示的一种可能性.html">
+            
+                
+                    <a href="./关于添加了一个view之后却不显示的一种可能性.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.34.</b>
+                        
+                        关于添加了一个view之后却不显示的一种可能性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.35" data-path="在scrollview中子控件布局的注意点.html">
+            
+                
+                    <a href="./在scrollview中子控件布局的注意点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.35.</b>
+                        
+                        在scrollview中子控件布局的注意点
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="数据相关.html">
+            
+                
+                    <a href="./数据相关.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        数据相关
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="json解析小结.html">
+            
+                
+                    <a href="./json解析小结.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        JSON解析小结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="多媒体相关.html">
+            
+                
+                    <a href="./多媒体相关.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        多媒体相关
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="视频播放.html">
+            
+                
+                    <a href="./视频播放.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        视频播放
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x7236;&#x5B50;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5C0F;tips">&#x7236;&#x5B50;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5C0F;tips</h1>
+<h3 id="&#x63A7;&#x5236;&#x5668;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x7684;&#x5EFA;&#x7ACB;&#x539F;&#x5219;">&#x63A7;&#x5236;&#x5668;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x7684;&#x5EFA;&#x7ACB;&#x539F;&#x5219;</h3>
+<ul>
+<li><p>&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x662F;&#x7236;&#x5B50;&#x5173;&#x7CFB;(&#x4E0D;&#x7BA1;&#x76F4;&#x63A5;&#x8FD8;&#x662F;&#x95F4;&#x63A5;&#x7684;&#x7236;&#x5B50;&#x5173;&#x7CFB;)&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E24;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x4E5F;&#x5E94;&#x8BE5;&#x4E3A;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;b&#x7684;view&#x5728;a&#x7684;view&#x4E0A;&#xFF0C;&#x90A3;&#x4E48;b&#x662F;a&#x7684;&#x5B50;&#x63A7;&#x5236;&#x5668;</p>
+</li>
+</ul>
+<pre><code class="lang-objc">    [a<span class="hljs-variable">.view</span> addSubview:b<span class="hljs-variable">.view</span>];
+    [a addChildViewController:b];
+</code></pre>
+<ul>
+<li>&#x5982;&#x679C;a&#x7684;view&#x4E0A;&#x6DFB;&#x52A0;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;view(otherView) &#xFF0C;&#x7136;&#x540E;b&#x7684;view&#x6DFB;&#x52A0;&#x5230;&#x4E86;otherView&#x4E0A;&#xFF0C;&#x90A3;&#x4E48;b&#x8FD8;&#x662F;a&#x7684;&#x5B50;&#x63A7;&#x5236;&#x5668;</li>
+</ul>
+<pre><code class="lang-objc">    [a<span class="hljs-variable">.view</span> addSubview:otherView];
+    [otherView addSubbiew<span class="hljs-variable">.b</span><span class="hljs-variable">.view</span>];
+    [a addChildViewController:b];
+</code></pre>
+<h3 id="&#x83B7;&#x5F97;&#x6240;&#x6709;&#x7684;&#x5B50;&#x63A7;&#x5236;&#x5668;">&#x83B7;&#x5F97;&#x6240;&#x6709;&#x7684;&#x5B50;&#x63A7;&#x5236;&#x5668;</h3>
+<pre><code class="lang-objc"><span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>,<span class="hljs-keyword">readonly</span>) <span class="hljs-built_in">NSArray</span> *childViewControllers;
+</code></pre>
+<h3 id="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B50;&#x63A7;&#x5236;&#x5668;">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B50;&#x63A7;&#x5236;&#x5668;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">// oneViewController&#x6210;&#x4E3A;&#x4E86;self&#x7684;&#x5B50;&#x63A7;&#x5236;&#x5668;</span>
+<span class="hljs-comment">// self&#x6210;&#x4E3A;&#x4E86;oneViewController&#x7684;&#x7236;&#x63A7;&#x5236;&#x5668;</span>
+[<span class="hljs-keyword">self</span> addChildViewController:[[oneViewController alloc] init]];
+</code></pre>
+<h3 id="&#x83B7;&#x5F97;&#x7236;&#x63A7;&#x5236;&#x5668;">&#x83B7;&#x5F97;&#x7236;&#x63A7;&#x5236;&#x5668;</h3>
+<pre><code class="lang-objc"><span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>,<span class="hljs-keyword">readonly</span>) <span class="hljs-built_in">UIViewController</span> *parentViewController;
+</code></pre>
+<h3 id="&#x5C06;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x4ECE;&#x5B83;&#x7684;&#x7236;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x79FB;&#x9664;">&#x5C06;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x4ECE;&#x5B83;&#x7684;&#x7236;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x79FB;&#x9664;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x63A7;&#x5236;&#x5668;a&#x4ECE;&#x5B83;&#x7684;&#x7236;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x79FB;&#x9664;</span>
+[a removeFromParentViewController];
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./shou_shi_cao_zuo.html" class="navigation navigation-prev " aria-label="Previous page: 手势操作"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./关于添加了一个view之后却不显示的一种可能性.html" class="navigation navigation-next " aria-label="Next page: 关于添加了一个view之后却不显示的一种可能性"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
